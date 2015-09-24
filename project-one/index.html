@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="notesApp">
 <body ng-controller="MainController as MainCtrl">
-  {{MainCtrl.message}} AngularJS.
-  <button ng-click="MainCtrl.changeMessage()">Change Message</button>
+  <div ng-repeat="note in MainCtrl.notes">
+    <span ng-bind="note.label" class="label"></span>
+    <span ng-bind="note.done" class="label"></span>
+  </div>
   <script type="text/javascript"
           src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
   </script>

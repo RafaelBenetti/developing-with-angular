@@ -2,8 +2,25 @@ var notesApp = angular.module('notesApp', []);
 
 notesApp.controller('MainController', [function(){
   var self = this;
-  self.message = 'Hello ';
-  self.changeMessage = function(){
-    self.message = 'Goodbye';
-  };
+  self.notes =
+     [{
+        id: 1,
+        label: 'First Note',
+        done: false
+      },
+      {
+        id: 2,
+        label: 'Second Note',
+        done: false
+      },
+      {
+        id: 3,
+        label: 'Done Note',
+        done: true
+      },
+      {
+        id: 4,
+        label: 'Last Note',
+        done: false
+      }];
 }]);
