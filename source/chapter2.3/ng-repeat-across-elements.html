@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="notesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with AngularJS</title>
+  </head>
+  <body ng-controller="MainController as mainCtrl">
+    <table>
+      <tr ng-repeat-start="note in mainCtrl.notes">
+        <td>
+          {{ note.label }}
+        </td>
+      </tr>
+      <tr ng-repeat-end>
+        <td>
+          Done: {{ note.done }}
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <script type="text/javascript" src="notesApp.js"></script>
+</html>
