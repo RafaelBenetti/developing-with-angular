@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="notesApp">
-<body ng-controller="MainController as MainCtrl">
-  <div ng-repeat="note in MainCtrl.notes">
-    <span ng-bind="note.label" class="label"></span>
-    <span ng-bind="note.done" class="label"></span>
+<script type="style/css"
+        src="main.css">
+</script>
+<body ng-controller="MainController as mainCtrl">
+  <div ng-repeat="note in mainCtrl.notes"
+       ng-class="mainCtrl.getNoteClass(note.done)">
+    <span ng-bind="note.label"
+          class="label"></span>
+    <span class="assignee"
+          ng-show="note.assignee"
+          ng-bind="note.assignee"></span>
   </div>
-  <script type="text/javascript"
-          src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
-  </script>
-  <script type="text/javascript"
-          src="notesApp.js">
-  </script>
 </body>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
+</script>
+<script type="text/javascript"
+        src="notesApp.js">
+</script>
 </html>
