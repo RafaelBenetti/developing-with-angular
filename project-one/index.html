@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
-<body ng-app>
-  <input type="text"
-         ng-model="name"
-         placeholder="Enter your name" />
-  <h1>Hello <span ng-bind="name">{{name}}</span></h1>
+<html ng-app="notesApp">
+<body ng-controller="MainController as MainCtrl">
+  {{MainCtrl.message}} AngularJS.
+  <button ng-click="MainCtrl.changeMessage()">Change Message</button>
   <script type="text/javascript"
           src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
+  </script>
+  <script type="text/javascript"
+          src="notesApp.js">
   </script>
 </body>
 </html>
