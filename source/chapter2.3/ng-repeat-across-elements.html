@@ -8,12 +8,12 @@
     <table>
       <tr ng-repeat-start="note in mainCtrl.notes">
         <td>
-          {{ note.label }}
+          <span ng-bind="note.label"></span>
         </td>
       </tr>
       <tr ng-repeat-end>
         <td>
-          Done: {{ note.done }}
+          Done: <span ng-bind="note.done"></span>
         </td>
       </tr>
     </table>

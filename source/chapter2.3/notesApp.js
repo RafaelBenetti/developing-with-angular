@@ -1,7 +1,7 @@
 angular.module('notesApp', [])
        .controller('MainController', [function(){
          var self = this;
-         self.notes =
+         self.  notes =
           [{
              id: 1,
              label: 'First Note',
