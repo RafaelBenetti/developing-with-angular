@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="notesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with AngularJS</title>
+  </head>
+  <body ng-controller="MainController as mainCtrl">
+    <div>
+      <select ng-model="mainCtrl.selectedCountryId"
+              ng-options="c.id as c.label for c in mainCtrl.countries track by c.id">
+      </select>
+        Selected Country Id: <span ng-bind="mainCtrl.selectedCountryId"></span>
+    </div>
+    <div>
+      <select ng-model="mainCtrl.selectedCountry"
+              ng-options="c.label for c in mainCtrl.countries track by c.id">
+      </select>
+        Selected Country: <span ng-bind="mainCtrl.selectedCountry"></span>
+    </div>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <script type="text/javascript" src="notesApp.js"></script>
+</html>
