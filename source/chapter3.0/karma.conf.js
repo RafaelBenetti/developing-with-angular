@@ -1,19 +1,18 @@
-module.export = function(config) {
+module.exports = function(config) {
   config.set({
     // path de base que será usado para resolver os nomes dos arquivos e exclusões.
-    pathBase = ''.
+    pathBase: '',
     // framework de testes a ser usado (jasmine/mocha/qunit/...)
-    frameworks = ['jasmine'],
+    frameworks: ['jasmine'],
     // lista de arquivos/padrões a serem carregados no navegador.
-    files = [
-      'angular.min.js',
-      'angular-mocks.js',
-      'contrller.js',
-      'simpleSpec.js',
+    files: [
+      '../scripts/angular.min.js',
+      '../scripts/angular-mocks.js',
+      'controller.js',
       'controllerSpec.js'
     ],
     // lista de arquivos/padrões a serem excluídos.
-    exclude = [],
+    exclude: [],
     // porta do servidor web.
     port: 8080,
     // nível de logging.
