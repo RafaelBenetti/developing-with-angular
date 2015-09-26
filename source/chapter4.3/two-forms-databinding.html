@@ -5,9 +5,14 @@
     <title>Working with AngularJS</title>
   </head>
   <body ng-controller="MainController as mainCtrl">
-    <form ng-submit="mainCtrl.submit()">
-      <input type="text" ng-model="mainCtrl.user.name">
+    <form ng-submit="mainCtrl.submit2()">
+      <input type="text" ng-model="mainCtrl.user.userName">
       <input type="password" ng-model="mainCtrl.user.password">
+      <input type="submit" value="Submit">
+    </form>
+    <form ng-submit="mainCtrl.submit1()">
+      <input type="text" ng-model="mainCtrl.userName">
+      <input type="password" ng-model="mainCtrl.password">
       <input type="submit" value="Submit">
     </form>
   </body>
