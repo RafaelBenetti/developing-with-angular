@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="notesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body ng-controller="MainController as mainCtrl">
+    <form ng-submit="mainCtrl.submit()" name="myForm">
+      <input type="text"
+             class="username"
+             name="uname"
+             ng-model="mainCtrl.user.userName"
+             ng-minlength="4"
+             required>
+      <input type="submit"
+             value="Submit"
+             ng-disabled="myForm.$invalid">
+    </form>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <script type="text/javascript" src="notesApp.js"></script>
+</html>
