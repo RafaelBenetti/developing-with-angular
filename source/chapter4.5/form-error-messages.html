@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="notesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with AngularJS</title>
+  </head>
+  <body ng-controller="MainController as mainCtrl">
+    <form ng-submit="mainCtrl.submit()" name="myForm">
+      <input type="text"
+             name="uname"
+             ng-model="mainCtrl.user.userName"
+             ng-minlength="4"
+             required>
+      <span ng-show="myForm.uname.$error.required">
+        This is a required fied.
+      </span>
+      <span ng-show="myForm.uname.$error.minlength">
+        Minimum length required is 4.
+      </span>
+      <span ng-show="myForm.uname.$invalid">
+        The field is invalid.
+      </span>
+      <input type="password"
+             name="pwd"
+             ng-model="mainCtrl.user.password"
+             required>
+      <span ng-show="myForm.pwd.$error.required">
+        This is a required field.
+      </span>
+      <input type="submit"
+             value="Submit"
+             ng-disabled="myForm.$invalid">
+    </form>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <script type="text/javascript" src="notesApp.js"></script>
+</html>
