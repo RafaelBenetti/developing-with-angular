@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="notesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with AngularJS</title>
+  </head>
+  <body ng-controller="MainController as mainCtrl">
+    <input type="text" ng-model="mainCtrl.userName">
+    <input type="password" ng-model="mainCtrl.userPassword">
+    <button ng-click="mainCtrl.change()">Change Values</button>
+    <button ng-click="mainCtrl.submit()">Submit</button>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <script type="text/javascript" src="notesApp.js"></script>
+</html>

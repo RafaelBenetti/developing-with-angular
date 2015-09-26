@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="notesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Working with AngularJS</title>
+  </head>
+  <body ng-controller="MainController as mainCtrl">
+    <input type="text" ng-model="mainCtrl.userName">
+    You typed <span ng-bind="mainCtrl.userName"></span>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+  <script type="text/javascript" src="notesApp.js"></script>
+</html>
