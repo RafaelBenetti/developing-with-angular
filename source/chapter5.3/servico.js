@@ -1,14 +1,13 @@
 function ItemService () {
-    var self = this;
     var items = [
       { id: 1, label: 'Item 0' },
       { id: 2, label: 'Item 1' }
     ];
 
-    self.list = function(){
+    this.list = function(){
       return items;
     };
-    self.add = function(item){
+    this.add = function(item){
       items.push(item);
     };
 }
