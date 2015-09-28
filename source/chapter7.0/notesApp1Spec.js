@@ -9,6 +9,7 @@ describe('ItemCtrl with inline mock', function(){
         return [{id: 1, label: 'Mock'}];
       }
     };
+    // Registrando a ItemService Mock.
     $provide.value('ItemService', mockService);
   }));
 
