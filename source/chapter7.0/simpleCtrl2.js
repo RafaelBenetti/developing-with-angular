@@ -1,4 +1,4 @@
-angular.module('simpleCtroller2App', [])
+angular.module('simpleController2App', [])
   .controller('SimpleController2', ['$location', '$window', function($location, $window){
     var self = this;
     self.navigate1 = function(){
