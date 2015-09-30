@@ -5,10 +5,15 @@ angular.module('filtersApp', [])
     var ONE_DAY = ONE_HOUR * 24;
     var ONE_MONTH = ONE_DAY * 30;
 
-    return function(ts) {
+    return function(ts, optShowSecondMessage) {
+
+      if (optShowSecondMessage !== false) {
+        optShowSecondMessage = true;
+      }
+
       var currentTime = new Date().getTime();
       var diff = currentTime - ts;
-      if (diff < ONE_MINUTE) {
+      if (diff < ONE_MINUTE && optShowSecondMessage) {
         return 'seconds ago';
       } else if (diff < ONE_HOUR) {
         return 'minutes ago';

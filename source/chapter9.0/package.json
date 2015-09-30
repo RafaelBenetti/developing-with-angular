@@ -1,0 +1,26 @@
+{
+  "name": "chapter7",
+  "version": "0.0.0",
+  "description": "Exemplos do livro de Desenvolvimento com AngularJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rafael Benetti",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RafaelBenetti/developing-with-angular.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
+  }
+}
