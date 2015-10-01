@@ -10,7 +10,7 @@ angular.module('fifaApp')
         getTeamDetails: function(code) {
           return $http.get('/api/team/' + code);
         }
-      }
+      };
   }])
   .factory('UserService', ['$http', function($http) {
     var service = {
